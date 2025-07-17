@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 订单头部 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tv_order_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="订单号：ORD123456789"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已完成"
+                android:textSize="12sp"
+                android:textColor="@color/success"
+                android:background="@drawable/bg_status_success"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp" />
+
+        </LinearLayout>
+
+        <!-- 订单信息 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_item_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="共3件商品"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary" />
+
+            <TextView
+                android:id="@+id/tv_order_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥299.00"
+                android:textSize="16sp"
+                android:textColor="@color/primary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024-01-15 14:30"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

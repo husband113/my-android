@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫码支付"
+        android:textSize="20sp"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <!-- 二维码 -->
+    <ImageView
+        android:id="@+id/iv_qr_code"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_qr_placeholder"
+        android:layout_marginBottom="20dp" />
+
+    <!-- 支付信息 -->
+    <TextView
+        android:id="@+id/tv_payment_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单金额：￥299.00\n订单号：ORD123456789"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请使用支付宝或微信扫码支付"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center" />
+
+</LinearLayout>

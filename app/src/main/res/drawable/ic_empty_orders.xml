@@ -1,0 +1,43 @@
+<!-- drawable/ic_empty_orders.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- 外框 -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M20,20h80v80H20z"
+        android:strokeWidth="2"
+        android:strokeColor="#BDBDBD"/>
+
+    <!-- 文档线条 -->
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M30,35h60v3H30z"/>
+
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M30,45h45v3H30z"/>
+
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M30,55h50v3H30z"/>
+
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M30,65h40v3H30z"/>
+
+    <!-- 空状态图标 -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M55,75m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0"/>
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,70L60,80 M55,75L65,75"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF"/>
+
+</vector>

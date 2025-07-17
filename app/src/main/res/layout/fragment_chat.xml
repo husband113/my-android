@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/chat_background">
+
+    <!-- 工具栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_ai_assistant"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AI购鞋助手"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/bg_online_dot"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在线"
+            android:textSize="12sp"
+            android:textColor="@color/success" />
+
+    </LinearLayout>
+
+    <!-- 聊天消息区域 -->
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/chat_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp" />
+
+    </ScrollView>
+
+    <!-- 快捷回复 -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="@android:color/white"
+        android:paddingVertical="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <Button
+                android:id="@+id/btn_quick_1"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_quick_button"
+                android:text="推荐鞋款"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btn_quick_2"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_quick_button"
+                android:text="尺码建议"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btn_quick_3"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_quick_button"
+                android:text="搭配建议"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btn_quick_4"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_quick_button"
+                android:text="价格咨询"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- 输入区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:elevation="4dp">
+
+        <!-- 附加功能按钮 -->
+        <ImageButton
+            android:id="@+id/btn_attach"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_circle_light"
+            android:src="@drawable/ic_attach"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone" />
+
+        <!-- 消息输入框 -->
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_message_input"
+            android:hint="输入你的问题..."
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:maxLines="3"
+            android:layout_marginEnd="12dp" />
+
+        <!-- 发送按钮 -->
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_send_button"
+            android:text="➤"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
