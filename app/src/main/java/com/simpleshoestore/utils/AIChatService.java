@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
 public class AIChatService {
     // DeepSeek API 配置
     private static final String API_URL = "https://api.deepseek.com/v1/chat/completions";
-    private static final String API_KEY = "sk-a5950339e4f04790afa63f3a0b89fa08"; // 请替换为您的 DeepSeek API 密钥
+    private static final String API_KEY = ""; // 请替换为您的 DeepSeek API 密钥
     private ExecutorService executor = Executors.newSingleThreadExecutor();
 
     public interface AIResponseCallback {
